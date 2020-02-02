@@ -1,0 +1,16 @@
+import sys 
+def decompress():
+    inputs = sys.stdin.read().split('\n')
+    num = int(inputs[0])
+    for i in range(num):
+        index = i + 1
+        row = inputs[index]
+        temp = row.split(' ')
+        times = int(temp[0])
+        symbol = str(temp[1])
+        line = ''
+        for j in range(times):
+            line += symbol
+        print(line)
+
+decompress()
