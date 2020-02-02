@@ -1,0 +1,22 @@
+import sys
+def cold_press():
+    my_input = sys.stdin.read().split('\n')
+    num = int(my_input[0]) + 1
+    for i in range(1, num):
+        my_str = my_input[i] + ' '
+        current = my_str[0]
+        count = 0
+        line = ''
+        for s in my_str:
+            if s == current:
+                count += 1
+            else:
+                line += str(count)
+                line += ' '
+                line += current
+                line += ' '
+                current = s
+                count = 1
+        print(line)
+
+cold_press
