@@ -1,0 +1,49 @@
+import sys
+my_list = [[1, 1], [2, 1], [1, 2], [2, 2]]
+def flipper():
+    answer = []
+    my_input = sys.stdin.read() + ' '
+    current = 'n'
+    count = 0
+    for s in my_input:
+        if s == current:
+            count += 1
+        else:
+            num = count%2
+            if num != 0:
+                if str(current) == 'H':
+                    horizontal()
+                elif str(current) == 'V':
+                    vertical()
+            count = 1
+            current = s
+    for thing in my_list:
+        if thing == [1, 1]:
+            answer.append(1)
+        elif thing == [2, 1]:
+            answer.append(2)
+        elif thing == [1, 2]:
+            answer.append(3)
+        elif thing == [2, 2]:
+            answer.append(4)
+    print(answer[0], answer[1])
+    print(answer[2], answer[3])
+
+def horizontal():
+    first = 1
+    second = 2
+    for thing in my_list:
+        if thing[1] == first:
+            thing[1] = second
+        else:
+            thing[1] = first
+
+def vertical():
+    first = 1
+    second = 2
+    for thing in my_list:
+        if thing[0] == first:
+            thing[0] = second
+        else:
+            thing[0] = first
+flipper()
