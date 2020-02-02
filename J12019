@@ -1,0 +1,12 @@
+import sys
+def winning_score():
+    scores = sys.stdin.read().split('\n')
+    a = int(scores[0])*3 + int(scores[1])*2 + int(scores[2])
+    b = int(scores[3])*3 + int(scores[4])*2 + int(scores[5])
+    if a > b:
+        return 'A'
+    elif b > a:
+        return 'B'
+    else:
+        return 'T'
+print(winning_score())
