@@ -1,0 +1,44 @@
+.g-post{
+	background-color: rgba(193, 187, 246, 0.29);
+	border-radius: 19px
+}
+
+.div[id="Div Block 400"]{
+	width: 50%;
+	padding: 34px;
+	flex-direction: vertical;
+	align-items: center;
+}
+
+.div[id="Div Block 399"]{
+	width: 50%;
+	padding:50px 20px 50px 0px;
+}
+
+.h1[id="Heading 1271"]{
+	font-family: Nexa bold;
+	font-size: 36px;
+	font-height: 40px;
+	color: #1d1f2e;
+}
+
+.p[id="Paragraph 769"]{
+	font-family: Nexa Bold;
+	font-size: 20px;
+	font-height: 20px;
+	font-color: rgba(29, 31, 46, 0.43);
+}
+
+.p[id="Paragraph 771"]{
+	font-family: Gotham Medium;
+	font-size: 16px;
+	font-height: 28px;
+	font-color: #7466aa;
+}
+
+ .p[id="Paragraph 770"]{
+ 	font-family: Gotham Light;
+        font-size: 14px;
+        font-height: 24px;
+        font-color: rgba(29, 31, 46, 0.7);
+  }
