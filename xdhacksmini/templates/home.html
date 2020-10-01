@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head> 
+	<title> Lucy's testing page </title>
+	
+	<link rel="stylesheet" href="static/styles.css">
+</head>
+
+<body>
+	<div class='g-post'>
+		<% for blog in blogposts %}
+			<div class="Div Block 400">
+				{{img}}
+			</div>
+			<div class="Div Block 399">
+				<h1 class="Heading 1271">{{title}} </h1>
+				<p class="Paragraph 769">{{subtitle}}</p>
+				<p class="Paragraph 771">{{author}}</p>
+				<p class="Paragraph 770">{{content}}</p>
+			</div>
+		{% endfor %}
+	</div>
+</body>
